@@ -27,16 +27,16 @@ img {
   border-radius: 5px;
   overflow: hidden;
 }
-.room__title h3 {
-  height: 45px;
-  padding: 5px 10px;
+.room__title h4 {
+  height: 40px;
+  padding: 5px;
   text-align: center;
   background-color: #e14747;
   color: #fff;
   margin: 0;
 }
 .room__list-user {
-  max-height: 320px;
+  max-height: 225px;
   overflow-y: auto;
 }
 .room__list-user::-webkit-scrollbar {
@@ -60,23 +60,32 @@ img {
   font-weight: bold;
 }
 .room__chat {
-  height: calc(100% - 45px);
+  height: 100%;
 }
 .room__chat .chat-box {
   height: calc(100% - 35px);
-  max-height: 285px;
-  padding: 10px;
+  max-height: 195px;
+  padding: 5px;
   overflow-y: scroll;
 }
 .room__chat .chat-box::-webkit-scrollbar {
   width: 3px;
 }
 .room__chat .chat-box .chat-item {
+  font-size: 11px;
   text-align: justify;
 }
 .room__chat .chat-form {
-  height: 30px;
-  margin-bottom: 10px;
+  padding: 5px;
+}
+.room__chat .chat-form .chat-text {
+  width: 100%;
+  height: 25px;
+}
+.room__chat .chat-form .chat-button {
+  height: 25px;
+  font-size: 13px;
+  margin-left: 5px;
 }
 .room__chat .chat-form form {
   width: 100%;
