@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bầu cua</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center m-2">Bầu cua "Người nhà quê"</h1>
+        <div class="row">
+            <div class="xuc-xac d-flex mb-2">
+                <div class="xuc-xac-item">
+                    <img src="imgs/bau.jpg" alt="">
+                </div>
+                <div class="xuc-xac-item">
+                    <img src="imgs/bau.jpg" alt="">
+                </div>
+                <div class="xuc-xac-item">
+                    <img src="imgs/bau.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="room">
+                    <div class="room__title">
+                        <h3>Người chơi</h3>
+                    </div>
+                    <div class="room__list-user">
+                        <div class="user">
+                            <div class="user__avt">
+                                <img src="imgs/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="info-username">qưeqe</div>
+                                <div class="info-coin"> <span class="coin"> 1222</span> <span class="text-green">xu</span></div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user__avt">
+                                <img src="imgs/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="info-username">qưeqe</div>
+                                <div class="info-coin"> <span class="coin"> 1222</span> <span class="text-green">xu</span></div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user__avt">
+                                <img src="imgs/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="info-username">qưeqe</div>
+                                <div class="info-coin"> <span class="coin"> 1222</span> <span class="text-green">xu</span></div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user__avt">
+                                <img src="imgs/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="info-username">qưeqe</div>
+                                <div class="info-coin"> <span class="coin"> 1222</span> <span class="text-green">xu</span></div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user__avt">
+                                <img src="imgs/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="info-username">qưeqe</div>
+                                <div class="info-coin"> <span class="coin"> 1222</span> <span class="text-green">xu</span></div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user__avt">
+                                <img src="imgs/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="info-username">qưeqe</div>
+                                <div class="info-coin"> <span class="coin"> 1222</span> <span class="text-green">xu</span></div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user__avt">
+                                <img src="imgs/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="info-username">qưeqe</div>
+                                <div class="info-coin"> <span class="coin"> 1222</span> <span class="text-green">xu</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="ban-dat">
+                    <div class="o-dat">
+                        <img src="imgs/nai.jpg" alt="">
+                        <div class="tien top">
+                            <div class="ground d-flex">
+                                </i><div class="tien-total">1:1</div>
+                            </div>
+                        </div>
+                        <div class="tien bottom">
+                            <div class="ground d-flex">
+                                <i class="fa fa-user"></i><div class="tien-user">10000</div>
+                            </div>
+                        </div>
+                        <form action="#" id="" class="dat-tien">
+                            <input type="submit" value="Đặt">
+                        </form>
+                    </div>
+                    <div class="o-dat">
+                        <img src="imgs/bau.jpg" alt="">
+                        <div class="tien top">
+                            <div class="ground d-flex">
+                                <i class="fa fa-users"></i><div class="tien-total">10000</div>
+                            </div>
+                        </div>
+                        <div class="tien bottom">
+                            <div class="ground d-flex">
+                                <i class="fa fa-user"></i><div class="tien-user">10000</div>
+                            </div>
+                        </div>
+                        <form action="#" id="" class="dat-tien">
+                            <input type="submit" value="Đặt">
+                        </form>
+                    </div>
+                    <div class="o-dat">
+                        <img src="imgs/ga.jpg" alt="">
+                        <div class="tien top">
+                            <div class="ground d-flex">
+                                <i class="fa fa-users"></i><div class="tien-total">10000</div>
+                            </div>
+                        </div>
+                        <div class="tien bottom">
+                            <div class="ground d-flex">
+                                <i class="fa fa-user"></i><div class="tien-user">10000</div>
+                            </div>
+                        </div>
+                        <form action="#" id="" class="dat-tien">
+                            <input type="submit" value="Đặt">
+                        </form>
+                    </div>
+                    <div class="o-dat">
+                        <img src="imgs/ca.jpg" alt="">
+                        <div class="tien top">
+                            <div class="ground d-flex">
+                                <i class="fa fa-users"></i><div class="tien-total">10000</div>
+                            </div>
+                        </div>
+                        <div class="tien bottom">
+                            <div class="ground d-flex">
+                                <i class="fa fa-user"></i><div class="tien-user">10000</div>
+                            </div>
+                        </div>
+                        <form action="#" id="" class="dat-tien">
+                            <input type="submit" value="Đặt">
+                        </form>
+                    </div>
+                    <div class="o-dat">
+                        <img src="imgs/cua.jpg" alt="">
+                        <div class="tien top">
+                            <div class="ground d-flex">
+                                <i class="fa fa-users"></i><div class="tien-total">10000</div>
+                            </div>
+                        </div>
+                        <div class="tien bottom">
+                            <div class="ground d-flex">
+                                <i class="fa fa-user"></i><div class="tien-user">10000</div>
+                            </div>
+                        </div>
+                        <form action="#" id="" class="dat-tien">
+                            <input type="submit" value="Đặt">
+                        </form>
+                    </div>
+                    <div class="o-dat">
+                        <img src="imgs/tom.jpg" alt="">
+                        <div class="tien top">
+                            <div class="ground d-flex">
+                                <i class="fa fa-users"></i><div class="tien-total">10000</div>
+                            </div>
+                        </div>
+                        <div class="tien bottom">
+                            <div class="ground d-flex">
+                                <i class="fa fa-user"></i><div class="tien-user">0</div>
+                            </div>
+                        </div>
+                        <form action="#" id="" class="dat-tien">
+                            <input type="submit" value="Đặt">
+                        </form>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="room">
+                    <div class="room__title">
+                        <h3>Chat</h3>
+                    </div>
+                    <div class="room__chat">
+                        <div class="chat-box">
+                            <div class="chat-item">a: valllll</div>
+                        </div>
+                        <div class="chat-form">
+                            <form action="#">
+                                <input type="text" class="chat-text">
+                                <input type="submit" value="Gửi" class="chat-button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-dat d-flex justify-content-center py-2">
+                    <input type="number" name="" id="" value="100">
+                    <input type="button" value="Hủy đặt">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="user">
+                    <img class="avt" src="imgs/user.png" alt="">
+                    <div class="info-user">
+                        <div class="name">Miny</div>
+                        <div class="money">10000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <h5>Thông báo</h5>
+                <div class="notice">Chào mừng đến với bầu cua tôm cá "Người nhà quê"</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

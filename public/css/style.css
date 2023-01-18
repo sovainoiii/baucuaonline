@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,500&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Serif 4", sans-serif;
+  color: #e14747;
+}
+
+img {
+  width: 100%;
+}
+
+.xuc-xac {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.xuc-xac-item {
+  width: 80px;
+  border: 4px solid #e14747;
+  margin: 0 5px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.room {
+  border: 1px solid #e14747;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.room__title h3 {
+  height: 45px;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #e14747;
+  color: #fff;
+  margin: 0;
+}
+.room__list-user {
+  max-height: 320px;
+  overflow-y: auto;
+}
+.room__list-user::-webkit-scrollbar {
+  width: 0px;
+}
+.room__list-user .user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+}
+.room__list-user .user .user__avt {
+  width: 25px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.room__list-user .user .user__info {
+  flex-grow: 8;
+}
+.room__list-user .user .user__info .info-username {
+  font-weight: bold;
+}
+.room__chat {
+  height: calc(100% - 45px);
+}
+.room__chat .chat-box {
+  height: calc(100% - 35px);
+  max-height: 285px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.room__chat .chat-box::-webkit-scrollbar {
+  width: 3px;
+}
+.room__chat .chat-box .chat-item {
+  text-align: justify;
+}
+.room__chat .chat-form {
+  height: 30px;
+  margin-bottom: 10px;
+}
+.room__chat .chat-form form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ban-dat {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #e14747;
+  border-radius: 5px;
+}
+.ban-dat .o-dat {
+  position: relative;
+  padding: 10px;
+  flex-grow: 1;
+  width: 33%;
+  border: 3px solid #e14747;
+}
+.ban-dat .o-dat .tien {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  color: #ff0;
+  padding: 5px 20px;
+  border-radius: 100px;
+  z-index: 1;
+}
+.ban-dat .o-dat .tien i {
+  width: 20px;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+.ban-dat .o-dat .top {
+  top: 5px;
+}
+.ban-dat .o-dat .bottom {
+  bottom: 5px;
+}
+.ban-dat .o-dat .dat-tien {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2666666667);
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ban-dat .o-dat .dat-tien input[type=submit] {
+  background-color: #e14747;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+}
+.ban-dat .o-dat:hover .dat-tien {
+  display: flex;
+}
+
+.form-dat input[type=number] {
+  margin-right: 10px;
+}
+
+.user {
+  display: flex;
+}
+.user .avt {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.user .info-user .name {
+  font-weight: bold;
+}
+
+h5 {
+  margin: 0;
+}
+
+.notice {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
